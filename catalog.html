@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-     <img class="page-header-logo" src="#" alt="Логотип сайта «Седона»">
+     <a class="header-logo-link"><img class="page-header-logo" src="#" alt="Логотип сайта «Седона»"></a>
      <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -60,13 +60,13 @@
 
                 <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Parking-space" checked>
+                  <input class="control-input" type="checkbox" name="parking-space" checked>
                   Парковка
                 </label>
 
                 <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  <input class="control-input" type="checkbox" name="wi-fi">
                   Wi-Fi
                 </label>
               </li>  
@@ -78,19 +78,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="Type-of-hotel" value="Hotel" checked>
+                  <input class="control-input" type="radio" name="type-of-hotel" value="hotel" checked>
                   Гостиница
                 </label>
 
                 <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="Type-of-hotel" value="Motel">
+                  <input class="control-input" type="radio" name="type-of-hotel" value="motel">
                   Мотель
                 </label>
 
                 <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="Type-of-hotel" value="Apartments">
+                  <input class="control-input" type="radio" name="type-of-hotel" value="apartments">
                   Апартаменты
                 </label>
               </li>  
@@ -105,17 +105,17 @@
           </select>
           <ul class="sorting-buttons-list">
             <li class="sorting-button-item">
-              <button class="button sorting-button">
+              <button class="button sorting-button" type="button">
                 <span class="visually-hidden">Показать карточки</span>
               </button>
             </li>
             <li class="sorting-button-item">
-              <button class="button sorting-button">
+              <button class="button sorting-button" type="button">
                 <span class="visually-hidden">Показать целиком</span>
               </button>
             </li>
             <li class="sorting-button-item">
-              <button class="button sorting-button">
+              <button class="button sorting-button" type="button">
                 <span class="visually-hidden">Показать список</span>
               </button>
             </li>
@@ -127,9 +127,9 @@
             <img class="product-card-image" src="#" alt="">
             <h3 class="product-card-title">Amara Resort & Spa</h3>
             <span class="product-card-text">Гостиница</span>
-            <b class="product-card-price">От 4000 ₽</b>
-            <a class="product-card-link button" href="#"></a>
-            <a class="favourites-link button" href="#"></a>
+            <span class="product-card-price">От 4000 ₽</span>
+            <a class="product-card-link button" href="#">ПОДРОБНЕЕ</a>
+            <a class="favourites-link button" href="#">В ИЗБРАННОМ</a>
             <span class="product-rating-stars">4 звезды</span>
             <span class="product-rating">Рейтинг: 8,5</span>
           </li>
@@ -137,9 +137,9 @@
             <img class="product-card-image" src="#" alt="">
             <h3 class="product-card-title">Villas at Poco Diablo</h3>
             <span class="product-card-text">Гостиница</span>
-            <b class="product-card-price">От 5000 ₽</b>
-            <a class="product-card-link button" href="#"></a>
-            <a class="favourites-link button" href="#"></a>
+            <span class="product-card-price">От 5000 ₽</span>
+            <a class="product-card-link button" href="#">ПОДРОБНЕЕ</a>
+            <a class="favourites-link button" href="#">В ИЗБРАННОМ</a>
             <span class="product-rating-stars">4 звезды</span>
             <span class="product-rating">Рейтинг: 9,2</span>
           </li>
@@ -147,9 +147,9 @@
             <img class="product-card-image" src="#" alt="">
             <h3 class="product-card-title">Desert Quail Inn</h3>
             <span class="product-card-text">Гостиница</span>
-            <b class="product-card-price">От 4000 ₽</b>
-            <a class="product-card-link button" href="#"></a>
-            <a class="favourites-link button" href="#"></a>
+            <span class="product-card-price">От 4000 ₽</span>
+            <a class="product-card-link button" href="#">ПОДРОБНЕЕ</a>
+            <a class="favourites-link button" href="#">В ИЗБРАННОМ</a>
             <span class="product-rating-stars">3 звезды</span>
             <span class="product-rating">Рейтинг: 6,9</span>
           </li>
@@ -157,9 +157,9 @@
             <img class="product-card-image" src="#" alt="">
             <h3 class="product-card-title">GreenTree Inn</h3>
             <span class="product-card-text">Гостиница</span>
-            <b class="product-card-price">От 4000 ₽</b>
-            <a class="product-card-link button" href="#"></a>
-            <a class="favourites-link button" href="#"></a>
+            <span class="product-card-price">От 4000 ₽</span>
+            <a class="product-card-link button" href="#">ПОДРОБНЕЕ</a>
+            <a class="favourites-link button" href="#">В ИЗБРАННОМ</a>
             <span class="product-rating-stars">2 звезды</span>
             <span class="product-rating">Рейтинг: 5,0</span>
           </li>
@@ -201,9 +201,9 @@
         <section class="footer-socials">
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="footer-socials-list">
-            <li class="footer-socials-item"><a class="button" href="#"></a><span class="visually-hidden">VK</span></li>
-            <li class="footer-socials-item"><a class="button" href="#"></a><span class="visually-hidden">Telegram</span></li>
-            <li class="footer-socials-item"><a class="button" href="#"></a><span class="visually-hidden">Youtube</span></li>
+            <li class="footer-socials-item"><a class="footer-socials-link" href="#"></a><span class="visually-hidden">VK</span></li>
+            <li class="footer-socials-item"><a class="footer-socials-link" href="#"></a><span class="visually-hidden">Telegram</span></li>
+            <li class="footer-socials-item"><a class="footer-socials-link" href="#"></a><span class="visually-hidden">Youtube</span></li>
           </ul>
         </section>
 
