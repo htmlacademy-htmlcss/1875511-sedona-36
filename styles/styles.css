@@ -21,10 +21,6 @@ html {
 }
 
 body {
-	margin: 0;
-	margin-right: auto;
-	margin-left: auto;
-	width: 1200px;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
@@ -51,15 +47,13 @@ body {
 
 /* pages */
 
-.page-container {
+.container {
 	width: 1200px;
 	margin: 0 auto;
 }
 
 .navigation {
-	display: flex;
-	width: 1200px;
-	margin: 0 auto;
+	display: flex;	
 }
 
 .navigation-list {
@@ -132,6 +126,15 @@ body {
 	width: 400px;
 }
 
+.advantages-item-img {
+	display: flex;
+	width: 1200px;
+}
+
+.stone-bridge {
+	order: -1;
+}
+
 .advantages-subtitle {
 	font-size: 24px;
 	line-height: 28px;
@@ -161,15 +164,7 @@ body {
 	color: #ffffff;
 }
 
-.baby-blue {
-	background-color: rgba(131, 179, 211, 0.12);
-}
 
-
-.sky-blue {
-	width: 1200px;
-	background-color: #82B3D3;
-}
 
 .advantages-item:nth-child(3) {
 	background-color: rgba(131, 179, 211, 0.2);
@@ -221,9 +216,14 @@ body {
 	background-color: #ffffff;
 }
 
-
 .baby-blue {
 	background-color: rgba(131, 179, 211, 0.12);
+}
+
+
+.sky-blue {
+	
+	background-color: #82B3D3;
 }
 
 /* redirect */
@@ -292,8 +292,6 @@ body {
 
 .footer-socials {
 	display: flex;
-	width: 1200px;
-	margin: 0 auto;
 	align-items: center;
 }
 
