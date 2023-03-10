@@ -25,8 +25,11 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>  
           </li>
-          <li class="navigation-item">
-           <a class="navigation-link" href="#"><span class="visually-hidden">Понравилось</span></a> 
+          <li class="navigation-item counter-item">
+           <a class="navigation-link" href="#"><span class="visually-hidden">Понравилось</span></a>
+            <div class="counter-wrapper">
+              <span class="counter">12</span>
+            </div>   
           </li>
           <li class="navigation-item">
            <a class="navigation-link button navigation-button" href="#">Хочу сюда!</a> 
@@ -108,7 +111,7 @@
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form">
-          <input type="email" name="email" value="Ваш e-mail">
+          <input type="email" name="email" placeholder="Ваш e-mail">
           <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
@@ -169,5 +172,55 @@
         </div>  
       </section>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form">
+            <fieldset class="modal-fieldset">
+              <label class="arrival-date-label">
+                <span class="arrival-date">Дата заезда:</span>
+                <input class="arrival-date-input" type="text" name="arrival-date" placeholder="Укажите дату">
+              </label>
+              <span class="arrival-date-text">Мы не можем отправить вас в прошлое.</span>
+              <label class="departure-date-label">
+                <span class="departure-date">Дата выезда:</span>
+                <input class="departure-date-input" type="text" name="departure-date" placeholder="Укажите дату">
+              </label>
+              <span class="departure-date-text">На эти даты есть свободные номера. Пока есть.</span>
+            </fieldset>
+            <fieldset class="modal-people-counter">
+              <label class="adult-label">
+                <span class="adult">Взрослые:</span>
+                <button class="minus-button"><span class="minus-icon"></span></button>
+                <input class="counter-input" type="number" name="adult-number" value="2">
+                <button class="plus-button"><span class="plus-icon"></span></button>
+              </label>
+              <label class="children-label">
+                <span class="children">Дети:</span>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-number-of-children">
+                    <svg class="tooltip-icon" width="2" height="12" viewBox="0 0 2 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="currentColor"/>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-number-of-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                </span>
+                <span class="children-information"></span>
+                <button class="minus-button"><span class="minus-icon"></span></button>
+                <input class="counter-input" type="number" name="children-number" value="2">
+                <button class="plus-button"><span class="plus-icon"></span></button>
+              </label>
+            </fieldset>
+            <button class="modal-find-button">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
