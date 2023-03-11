@@ -32,7 +32,7 @@
             </div>   
           </li>
           <li class="navigation-item">
-           <a class="navigation-link button navigation-button" href="#">Хочу сюда!</a> 
+           <a class="navigation-link button navigation-button" href="#">Хочу сюда!<span class="visually-hidden">Забронировать</span></a> 
           </li>
         </ul>
        </nav>
@@ -110,8 +110,9 @@
       <section class="subscription subscription-main">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscription-form">
-          <input type="email" name="email" placeholder="Ваш e-mail">
+        <form class="subscription-form" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="email-input">Ваш e-mail</label>
+          <input type="email" name="email" placeholder="Ваш e-mail" id="email-input">
           <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
@@ -168,6 +169,7 @@
           <path d="M98.2 18.2564C96.6 18.2564 95.3 19.0564 94.6 20.2564H94.5C93.9 19.0564 92.7 18.2564 91.1 18.2564C89.7 18.2564 88.6 18.9564 88 20.0564V18.5564H86.1V29.1564H88.1V23.7564C88.1 21.7564 89.1 20.3564 90.7 20.2564C92.2 20.2564 93.1 21.2564 93.1 22.8564V29.1564H95.1V23.5564C95.1 21.1564 96.5 20.2564 97.7 20.2564C99.2 20.2564 100.1 21.2564 100.1 22.8564V29.1564H102.1V22.6564C102.2 20.0564 100.7 18.2564 98.2 18.2564Z" fill="currentColor"/>
           <path d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" fill="currentColor"/>
           </svg>
+          <span class="visually-hidden">Сайт академии</span>
           </a>
         </div>  
       </section>
@@ -175,32 +177,31 @@
 
     <div class="modal-container">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="modal-form">
+          <form class="modal-form" action="https://echo.htmlacademy.ru">
             <fieldset class="modal-fieldset">
               <label class="arrival-date-label">
                 <span class="arrival-date">Дата заезда:</span>
                 <input class="arrival-date-input" type="text" name="arrival-date" placeholder="Укажите дату">
-              </label>
-              <span class="arrival-date-text">Мы не можем отправить вас в прошлое.</span>
+                <span class="arrival-date-text">Мы не можем отправить вас в прошлое.</span>
+              </label>    
               <label class="departure-date-label">
                 <span class="departure-date">Дата выезда:</span>
                 <input class="departure-date-input" type="text" name="departure-date" placeholder="Укажите дату">
-              </label>
-              <span class="departure-date-text">На эти даты есть свободные номера. Пока есть.</span>
+                <span class="departure-date-text">На эти даты есть свободные номера. Пока есть.</span>
+              </label>             
             </fieldset>
             <fieldset class="modal-people-counter">
-              <label class="adult-label">
+              <label class="adult-label" for="adult-number"></label>
                 <span class="adult">Взрослые:</span>
-                <button class="minus-button"><span class="minus-icon"></span></button>
-                <input class="counter-input" type="number" name="adult-number" value="2">
-                <button class="plus-button"><span class="plus-icon"></span></button>
-              </label>
-              <label class="children-label">
+                <button class="minus-button" type="button"><span class="visually-hidden">Минус</span></button>
+                <input class="counter-input" type="number" name="adult-number" value="2" id="adult-number">
+                <button class="plus-button" type="button"><span class="visually-hidden">Плюс</span></button>
+              <label class="children-label" for="children-number"></label>
                 <span class="children">Дети:</span>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-number-of-children">
@@ -210,17 +211,14 @@
                   </button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-number-of-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
                 </span>
-                <span class="children-information"></span>
-                <button class="minus-button"><span class="minus-icon"></span></button>
-                <input class="counter-input" type="number" name="children-number" value="2">
-                <button class="plus-button"><span class="plus-icon"></span></button>
-              </label>
+                <button class="minus-button" type="button"><span class="visually-hidden">Минус</span></button>
+                <input class="counter-input" type="number" name="children-number" value="2" id="children-number">
+                <button class="plus-button" type="button"><span class="visually-hidden">Плюс</span></button>
             </fieldset>
-            <button class="modal-find-button">Найти</button>
+            <button class="modal-find-button" type="button">Найти</button>
           </form>
         </section>
       </div>
     </div>
-
   </body>
 </html>

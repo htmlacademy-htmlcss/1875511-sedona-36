@@ -32,7 +32,7 @@
             </div>   
           </li>
           <li class="navigation-item">
-           <a class="navigation-link button navigation-button" href="#">Хочу сюда!</a> 
+           <a class="navigation-link button navigation-button" href="#">Хочу сюда!<span class="visually-hidden">Забронировать</span></a> 
           </li>
         </ul>
        </nav>
@@ -56,7 +56,7 @@
 
         <section class="catalog-filter">
           <h2  class="visually-hidden">Фильтр для выбора Гостиницы</h2>
-          <form class="catalog-filter-form" action="#" method="get">
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="filter-flex-container">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -114,25 +114,25 @@
               <fieldset class="catalog-range-slider">
                 <legend class="catalog-slider-title">Стоимость, ₽:</legend>
                 <div class="catalog-wrapper-inputs">
-                  <label class="catalog-inputs-title min-price-title">
+                  <label class="catalog-inputs-title min-price-title"><span class="visually-hidden">Минимальная цена</span>
                     <input class="range-input" type="number" name="min-price" value="0"><span class="min-price-text">от</span>
                   </label>
-                  <label class="catalog-inputs-title max-price-title">
+                  <label class="catalog-inputs-title max-price-title"><span class="visually-hidden">Максимальная цена</span>
                     <input class="range-input" type="number" name="mix-price" value="9000"><span class="max-price-text">до</span>
                   </label>
                 </div>
                 <div class="range-slider">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 198px; width: 70px">
-                      <button class="range-toggle toggle-min" type="button"></button>
-                      <button class="range-toggle toggle-max" type="button"></button>
+                      <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">Минимальная цена</span></button>
+                      <button class="range-toggle toggle-max" type="button"><span class="visually-hidden">Максимальная цена</span></button>
                     </div>
                   </div>
                 </div>
               </fieldset>
               <div class="apply-reset-buttons">
-                  <button class="button apply-button">Применить</button>
-                  <button class="button reset-button">Сбросить</button>
+                  <button class="button apply-button" type="button">Применить</button>
+                  <button class="button reset-button" type="button">Сбросить</button>
                 </div>
             </div>  
           </form>  
@@ -239,8 +239,9 @@
       <section class="subscription">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscription-form catalog-subscription-form">
-          <input type="email" name="email" placeholder="Ваш e-mail">
+        <form class="subscription-form catalog-subscription-form" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="email-input">Ваш e-mail</label>
+          <input type="email" name="email" placeholder="Ваш e-mail" id="email-input">
           <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
@@ -297,6 +298,7 @@
           <path d="M98.2 18.2564C96.6 18.2564 95.3 19.0564 94.6 20.2564H94.5C93.9 19.0564 92.7 18.2564 91.1 18.2564C89.7 18.2564 88.6 18.9564 88 20.0564V18.5564H86.1V29.1564H88.1V23.7564C88.1 21.7564 89.1 20.3564 90.7 20.2564C92.2 20.2564 93.1 21.2564 93.1 22.8564V29.1564H95.1V23.5564C95.1 21.1564 96.5 20.2564 97.7 20.2564C99.2 20.2564 100.1 21.2564 100.1 22.8564V29.1564H102.1V22.6564C102.2 20.0564 100.7 18.2564 98.2 18.2564Z" fill="currentColor"/>
           <path d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" fill="currentColor"/>
           </svg>
+          <span class="visually-hidden">Сайт академии</span>
           </a>
         </div>   
       </section>

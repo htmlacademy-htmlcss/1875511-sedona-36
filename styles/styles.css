@@ -317,7 +317,7 @@ body {
 	position: 	relative;
 }
 .advantages-item {
-	width: 400px;
+	min-width: 400px;
 }
 
 .advantages-item-img {
@@ -1559,7 +1559,7 @@ body {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.8);
 	z-index: 1;
-	display: none;
+	
 }
 
 .modal {
@@ -1593,27 +1593,21 @@ body {
 	font-size: 20px;
 	line-height: 24px;
 	font-weight: 700;
-	margin-bottom: 4px;
-	text-transform: capitalize;
+	margin-bottom: 48px;
 }
 
-.departure-date-label {
-	margin-top: 24px;
-}
 
 .arrival-date-text,
 .departure-date-text {
+	position: absolute;
+	left: 177px;
+	top: 48px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 400;
 
-	margin-left: 157px;
-	padding-left: 20px;
 }
 
-.departure-date-text {
-	margin-bottom: 23px;
-}
 
 .arrival-date-text {
 	color: #FF5757;
@@ -1747,15 +1741,51 @@ body {
 	opacity: 0.3;
 }
 
-.minus-icon:hover,
-.plus-icon:hover {
+.minus-button:after {
+	content: '';
+	position: absolute;
+	top: 23px;
+	left: 13px;
+	display: block;
+	width: 14px;
+	height: 2px;
+	margin: 0;
+	background-image: url("../images/vector/minus.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 4px 0 0 4px;
+	opacity: 0.3;
+}
+
+.plus-button:after {
+	content: '';
+	position: absolute;
+	top: 17px;
+	left: 13px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	background-image: url("../images/vector/plus.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 0 4px 4px 0;
+	opacity: 0.3;
+}
+
+
+
+.minus-button:hover::after,
+.plus-button:hover::after {
 	opacity: 1;
 }
 
-.minus-icon:active,
-.plus-icon:active {
-	opacity: 0.1;
+
+.minus-button:active::after,
+.plus-button:active::after {
+	opacity: 0.3;
 }
+
+
 
 .counter-input {
 	font-size: 18px;
@@ -1817,6 +1847,7 @@ body {
 	padding: 0;
 	border: none;
 	border-radius: 10px;
+	text-transform: uppercase;
 
 	background: #83B3D3;
 	color: #ffffff;
@@ -1853,6 +1884,8 @@ body {
 }
 
 .tooltip-toggle {
+	width: 26px;
+	height: 26px;
 	border: none;
 	background-color: transparent;
 	padding: 0;
