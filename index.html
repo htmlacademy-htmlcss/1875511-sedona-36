@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
       <div class="container header-flex-container">
-       <a class="header-logo-link"><img class="page-header-logo" src="images/vector/logo.svg" alt="Логотип сайта «Седона»" width="140" height="70"></a>
+       <a class="header-logo-link"><img class="page-header-logo" src="images/vector/logo.svg" alt="Логотип сайта «Седона.»" width="140" height="70"></a>
        <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -23,10 +24,10 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>  
+            <a class="navigation-link navigation-search-icon" href="#"><span class="visually-hidden">Поиск</span></a>  
           </li>
           <li class="navigation-item counter-item">
-           <a class="navigation-link" href="#"><span class="visually-hidden">Понравилось</span></a>
+           <a class="navigation-link navigation-heart-icon" href="#"><span class="visually-hidden">Понравилось</span></a>
             <div class="counter-wrapper">
               <span class="counter">12</span>
             </div>   
@@ -56,17 +57,17 @@
             <h3 class="advantages-subtitle">Настоящий<br> городок</h3>
             <p class="advantages-subtitle-text">Седона — не аттракцион для<br> туристов, там течёт своя<br> жизнь</p>
           </div>
-            <img class="advantages-item-photo" src="images/photo-1.jpg" alt="Городок «Седона»" width="800" height="384"> 
+            <img class="advantages-item-photo" src="images/photo-1.jpg" alt="Городок «Седона.»" width="800" height="384"> 
           </li>
-          <li class="advantages-item baby-blue decorative-underline-container">
+          <li class="advantages-item baby-blue">
             <h3 class="advantages-subtitle decorative-underline">Небольшая<br> площадь</h3>
             <p class="advantages-subtitle-text">Все достопримечательности<br> находятся очень близко</p>
           </li>
-          <li class="advantages-item decorative-underline-container">
+          <li class="advantages-item">
             <h3 class="advantages-subtitle decorative-underline">Красивая<br> дорога</h3>
             <p class="advantages-subtitle-text">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
           </li>
-          <li class="advantages-item baby-blue decorative-underline-container">
+          <li class="advantages-item baby-blue">
             <h3 class="advantages-subtitle decorative-underline">Мало<br> туристов</h3>
             <p class="advantages-subtitle-text">Большинство едет в Гранд<br> Каньон и толпится там</p>
           </li>
@@ -75,7 +76,7 @@
             <h3 class="advantages-subtitle">Там есть<br> мост дьявола</h3>
             <p class="advantages-subtitle-text">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
           </div> 
-            <img class="advantages-item-photo stone-bridge" src="images/photo-2.jpg" alt="Каменный мост" width="800" height="384">
+            <img class="advantages-item-photo stone-bridge" src="images/photo-2.jpg" alt="Каменный мост." width="800" height="384">
           </li>
         </ul>
       </section> 
@@ -112,7 +113,7 @@
         <p class="subscription-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="email-input">Ваш e-mail</label>
-          <input type="email" name="email" placeholder="Ваш e-mail" id="email-input">
+          <input type="email" name="email" placeholder="Ваш e-mail" id="email-input" required>
           <button class="button" type="submit">ПОДПИСАТЬСЯ</button>
         </form>
       </section>
@@ -186,12 +187,12 @@
             <fieldset class="modal-fieldset">
               <label class="arrival-date-label">
                 <span class="arrival-date">Дата заезда:</span>
-                <input class="arrival-date-input" type="text" name="arrival-date" placeholder="Укажите дату">
+                <input class="arrival-date-input" type="text" name="arrival-date" placeholder="Укажите дату" required>
                 <span class="arrival-date-text">Мы не можем отправить вас в прошлое.</span>
               </label>    
               <label class="departure-date-label">
                 <span class="departure-date">Дата выезда:</span>
-                <input class="departure-date-input" type="text" name="departure-date" placeholder="Укажите дату">
+                <input class="departure-date-input" type="text" name="departure-date" placeholder="Укажите дату" required>
                 <span class="departure-date-text">На эти даты есть свободные номера. Пока есть.</span>
               </label>             
             </fieldset>
